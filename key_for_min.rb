@@ -5,7 +5,7 @@ def key_for_min_value(name_hash)
   lowest_name = nil
   lowest_number = nil
   name_hash.map do |name, number|
-    if number < lowest_number || lowest_number == nil
+    if number < lowest_number == nil || number < lowest_value
       lowest_number = number
       lowest_name = name
     end
